@@ -1,0 +1,58 @@
+<br>
+<form [formGroup]="profileForm">
+    <br>
+   <div class="form-container">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <fieldset disabled>
+      <label for="codigo">Código</label>
+      <input type="text" formControlName="codigo" />
+    </fieldset>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" formControlName="nombre" />
+
+    <label for="direcc">Dirección</label>
+    <input type="text" formControlName="direcc" />
+
+    <label for="fono">Teléfono</label>
+    <input type="text" formControlName="fono" />
+
+    <button type="submit" [disabled]="!profileForm.valid">Guardar</button>
+  </form>
+</div>
+
+    <br>
+ 
+
+
+
+   <div *ngIf="forumUsers.length > 0" class="user-list-container">
+  <h2>Lista de Usuarios</h2>
+
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Teléfono</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let forumU of forumUsers">
+        <td>{{ forumU.id }}</td>
+        <td>{{ forumU.name }}</td>
+        <td>{{ forumU.addres }}</td>
+        <td>{{ forumU.phone }}</td>
+        <td>
+          <button class="btn update" (click)="updateUser(forumU)">Actualizar</button>
+          <button class="btn delete" (click)="removeUser(forumU)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</form>
