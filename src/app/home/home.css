@@ -117,3 +117,18 @@ h2 {
 .btn.delete:hover {
   background-color: #c82333;
 }
+
+.btn.nuevo {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.btn.nuevo:hover {
+  background-color: #004a99;
+}

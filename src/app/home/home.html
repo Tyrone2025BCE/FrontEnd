@@ -1,7 +1,11 @@
-<br>
-<form [formGroup]="profileForm">
-    <br>
-   <div class="form-container">
+<!-- Botón NUEVO -->
+<button class="btn nuevo" type="button" (click)="nuevoUsuario()">Nuevo</button>
+
+<br /><br />
+
+<!-- FORMULARIO -->
+<div class="form-container">
+  <h2>Ingreso de Datos Usuario</h2>
   <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <fieldset disabled>
       <label for="codigo">Código</label>
@@ -21,12 +25,10 @@
   </form>
 </div>
 
-    <br>
- 
+<br /><br />
 
-
-
-   <div *ngIf="forumUsers.length > 0" class="user-list-container">
+<!-- LISTA DE USUARIOS -->
+<div *ngIf="forumUsers.length > 0" class="user-list-container">
   <h2>Lista de Usuarios</h2>
 
   <table class="user-table">
@@ -53,6 +55,3 @@
     </tbody>
   </table>
 </div>
-
-
-</form>

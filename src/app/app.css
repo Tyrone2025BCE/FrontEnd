@@ -100,3 +100,41 @@ table button:last-child {
 table button:last-child:hover {
   background-color: #c82333;
 }
+
+
+
+/* Estilo general del main */
+.main {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Navbar estilo horizontal moderno */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Enlaces del navbar */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Hover sobre los enlaces */
+.nav-link:hover {
+  color: #ffd966;
+}
+
+/* Enlace activo */
+.active {
+  border-bottom: 2px solid #ffd966;
+}

@@ -140,6 +140,12 @@ actualizarLista() {
 
 
 
+nuevoUsuario() {
+  this.resetForm();
+}
+
+
+
 }
 
 
